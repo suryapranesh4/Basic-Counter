@@ -8,13 +8,15 @@ function App(){
     const valueToAddOrDecrease = 1;
 
     const increment = () => {
-        if(count !== maxCount)
-            setCount(count+valueToAddOrDecrease);
+        if(parseInt(count) !== maxCount)
+            setCount(parseInt(count)+valueToAddOrDecrease);
+        if(count === '')
+            setCount(1);
     }
 
     const decrement = () => {
-        if(count !== minCount)
-            setCount(count-valueToAddOrDecrease);
+        if(parseInt(count) !== minCount)
+            setCount(parseInt(count)-valueToAddOrDecrease);
     }
 
     const setValue = value => {
