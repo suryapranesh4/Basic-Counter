@@ -1,0 +1,77 @@
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle{
+    height: fit-content;
+    width: fit-content;
+    border : 1px solid #B24242;
+    border-radius: 8px;
+    display: flex;
+    font-size: 21px;
+}
+
+.rectangle button:nth-child(1){
+    color : #B24242;
+    background-color : #FFFFFF;
+    border: none;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    cursor: pointer;
+}
+
+.rectangle button:nth-child(3){
+    background-color : #B24242;
+    color : #FFFFFF;
+    border: none;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    cursor: pointer;
+}
+
+.rectangle input{
+    background-color: #FBE8E8;
+    color : #B24242;
+    font-weight: 900;
+    text-align: center;
+    border-left : 1px solid #B24242;
+    border-right : none;
+    border-top : none;
+    border-bottom : none;
+}
+
+.rectangle input:focus-visible{
+    outline : none;
+}
+
+.rectangle button:focus-visible{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.rectangle button, .rectangle input{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="number" i]{
+    padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
